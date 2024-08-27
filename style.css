@@ -1,0 +1,175 @@
+
+body {
+color: white ;
+background: black;
+margin: 0px;
+font-size:25px;
+font-family: "Chakra Petch", sans-serif;
+margin-bottom: 60px;
+}
+
+
+header {
+padding: 10px;
+color: rgb(255 2 236);
+font-size: 60px;
+font-size: 80%;
+}
+
+
+.chamada { 
+color: rgb(255 2 236);
+background-color: rgb(75 54 105);
+padding-bottom: 30px;
+padding-top: 30px;
+padding-left: 20px;
+padding-right: 20px;
+display: flex;
+justify-content: center;
+border-top: solid 2px rgb(255 2 236); /* Adicionando uma linha na horizontal*/
+border-bottom:solid 2px rgb(255 2 236);
+}
+
+.chamada-texto{
+margin-right: 5%;
+ }
+
+img { 
+height: 110px;
+}
+
+.categorias {
+display: flex;
+overflow-x: auto; /* Adicionando rolagem na horizontal*/
+gap: 20px; /* Adicionando um vão entre os elementos*/ 
+}
+
+.categorias {
+padding-left: 5px;
+padding-right: 20px;
+padding-bottom: 25px;
+}
+
+.categorias img {
+opacity: 0.5;
+}
+
+.categorias img:hover { 
+opacity: 1.0;
+border: 1px solid rgb(255 2 236);
+}
+
+
+iframe {
+    border: 1px solid rgb(255 2 236);
+}
+
+.jogos h2 {
+font-size: 27px;
+color: rgb(255 2 236);
+}
+
+.chamada-texto h5 {
+color: rgb(230, 173, 253);
+}
+
+
+
+.categorias {
+display: flex;
+justify-content: space-between;
+overflow-x: hidden;
+gap: 20px;
+padding-left: 3px;
+padding-right: 20px;
+margin-bottom: 20px; 
+margin-right: 70;
+margin-left: 70;
+}
+
+.borda-externa {
+    border-bottom:solid 2px rgb(255 2 236);
+}
+
+.jogos h2{
+text-align: center;
+font-size: 23px;
+color: rgb(255 2 236);
+margin: 10px;
+}
+
+
+
+/*Adicionando uma seta*/
+
+
+/*Caixa da seta*/
+.button-arrow {
+width: 50px;
+height: 50px;
+background-color: rgb(255 2 236);
+box-shadow: 5px 5px 0px rgb(75 54 105);
+cursor: pointer;
+}
+
+/*Escondendo o conteúdo*/
+.button-arrow .content {
+    display: none;
+}
+
+/*Criando a seta com margens*/
+.button-arrow::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-left: 28px solid rgb(100, 0, 92);
+    border-top: 20px solid rgb(255 2 236);
+    border-bottom: 20px solid rgb(255 2 236);
+    transform: translate(6px);
+    padding-left: -2px;
+    padding-right: -2px;
+}
+
+
+.button-arrow.-left::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-left: 28px solid rgb(100, 0, 92);
+    border-top: 20px solid rgb(255 2 236);
+    border-bottom: 20px solid rgb(255 2 236);
+    padding-left: -2px;
+    padding-right: -2px;
+    transform: rotate(180deg);
+}
+
+
+
+/*posicionando o botão*/
+
+.borda-externa {
+    position:relative;
+    padding-left: 30px;
+    padding-right: 40px;;
+}
+
+.borda-externa .button-arrow { /*posição da seta da esquerda*/
+position:absolute;
+left: 25px;
+bottom: 75px;        /*  +sobe  */
+transform: rotate(180deg);
+}
+
+.borda-externa .button-arrow.-left{ /*posição da seta da direita*/
+left:1265px;
+top: 70px;          /*  +desce */
+}
+
+
+.button-arrow .button-arrow.-right{
+right: 30px;
+}
